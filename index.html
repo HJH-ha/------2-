@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 페비콘 링크, 부트스트랩 CSS, 부트스트랩 JS -->
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script defer src="js/bootstrap.bundle.min.js"></script>
+
+    <title>Bootstrap 5 Basics</title>
+    <style>
+      .navbar-nav .nav-link {
+        font-size: 1.5rem; /* 텍스트 크기 조정 */
+        color: black; /* 글자 색상 변경 (예: 주황색) */
+      }
+      .border-end {
+        padding-right: 30px;
+        padding-left: 20px;
+      }
+      .nav-link:hover {
+        color: #ff6600; /* 마우스 오버 시 글자 색상 변경 */
+
+        /* 마우스 오버 시 배경 색상 변경 */
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 네브바 -->
+    <nav
+      class="navbar navbar-expand-md navbar-light bg-white fixed-top"
+      id="nav-scroll"
+    >
+      <div class="container">
+        <!-- 제목 -->
+        <a href="#" class="navbar-brand">
+          <img class="me-1" src="img/h1_logo_new2022.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navBar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navBar">
+          <!-- 메뉴 -->
+          <ul class="navbar-nav fw-bold ms-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">
+                <div class="border-end">메뉴</div></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link"
+                ><div class="border-end">매장안내</div></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link"
+                ><div class="border-end">이벤트</div></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#blog" class="nav-link"
+                ><div class="border-end">주문</div></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link"
+                ><div class="border-end">쿠폰</div></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">교촌스토리</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- 네브바 끝 -->
+  </body>
+</html>
